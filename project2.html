@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="./project.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap"
+    />
+    <title>Taoufiq Jmari</title>
+    <link rel="icon" type="image/li-icon" href="../public/logo@2x.png" />
+  </head>
+  <body>
+    <div class="project-page">
+      <div class="main-frame">
+        <div class="sub-frame">
+          <button class="source-code" id="sourceCode">
+            <div class="container11"></div>
+            <img class="gh-icon" alt="" src="../public/gh-icon@2x.png" />
+
+            <div class="preview-frame">
+              <b class="label-frame">Source Code</b>
+            </div>
+          </button>
+        </div>
+        <button class="preview" id="preview">
+          <div class="container12"></div>
+          <img
+            class="preview-icon"
+            alt=""
+            src="../public/preview-icon@2x.png"
+          />
+
+          <b class="text-area">Preview</b>
+        </button>
+      </div>
+      <main class="project">
+        <b class="title6">Digital Products Ecommerce Website</b>
+        <section class="sub-frame1">
+          <div class="image-frame">
+            <div class="image-component">
+              <img
+                class="image-icon"
+                loading="eager"
+                alt=""
+                src="./public/ecommerce_1.png"
+              />
+              <img
+                class="image-icon"
+                loading="eager"
+                alt=""
+                src="./public/ecommerce_2.png"
+              />
+              <img
+                class="image-icon"
+                loading="eager"
+                alt=""
+                src="./public/ecommerce_3.png"
+              />
+            </div>
+            <div class="description3">
+              <p class="description-inner">
+                ‣ Relies heavily on integrating with third-party APIs
+              </p>
+              <p class="description-inner">‣ Authentication using Clerk</p>
+              <p class="description-inner">‣ Payment processing using Stripe</p>
+              <p class="description-inner">‣ Sending emails using Resend</p>
+              <p class="description-inner">‣ Content management using Strapi</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      var sourceCode = document.getElementById('sourceCode');
+      if (sourceCode) {
+        sourceCode.addEventListener('click', function () {
+          window.open(
+            'https://github.com/HaaniAgency/ecommerce-fe'
+          );
+        });
+      }
+
+      var preview = document.getElementById('preview');
+      if (preview) {
+        preview.addEventListener('click', function () {
+          window.open('/preview.html');
+        });
+      }
+    </script>
+  </body>
+</html>
